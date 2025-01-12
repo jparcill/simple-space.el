@@ -1,0 +1,17 @@
+#+title: README
+
+* Description
+Spaced Repeition package for org mode.
+
+* Use Case
+This is for all those habits that are too small to be made into a traditional org mode habit. Think stretching, maintaining good posture, working out regularly, flossing.
+
+There are a million of these that I need reminders for but at the same time it's also ridiculous to have a daily reminder to floss. What I do need is gentle spaced reminders that reinforce the habit.
+
+* How To Use
+This is as minimalist as it gets. 2 functions. Bind =simple-space-habit-succeeded= and =simple-space-habit-failed= and use the function on any org mode header
+
+It will first schedule the org mode header 1 day in advance. Every repetition, the SCHEDULED item will be rescheduled doubly as far in the future. 2, 4, 8 days etc.
+
+* Why is this a package?
+It really doesn't need to be. I'm playing around with packages to try to understand how they're published.
