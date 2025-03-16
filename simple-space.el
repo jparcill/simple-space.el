@@ -21,9 +21,9 @@
             (if (eq spaced-rep-str nil) 1 (string-to-number spaced-rep-str))))
       (progn
         (org-schedule nil (format "+%dd" spaced-rep))
-        (org-set-property "SPACEDREP" (number-to-string (* spaced-rep 2))))))
+        (org-set-property "SPACEDREP" (min (number-to-string (* spaced-rep 2)) 30)))))
 
-(defun simple-space-habit-failed ()
+(defun simple-space-habit-restart ()
   (interactive)
   (org-set-property "SPACEDREP" "1")
   (habit-checked))
