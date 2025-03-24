@@ -13,6 +13,7 @@
 ;; This file is not part of GNU Emacs.
 ;;
 
+;;;###autoload
 (defun simple-space-habit-succeeded ()
     (interactive)
     (let* ((properties (org-entry-properties))
@@ -23,6 +24,7 @@
         (org-schedule nil (format "+%dd" spaced-rep))
         (org-set-property "SPACEDREP" (min (number-to-string (* spaced-rep 2)) 30)))))
 
+;;;###autoload
 (defun simple-space-habit-restart ()
   (interactive)
   (org-set-property "SPACEDREP" "1")
