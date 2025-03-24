@@ -28,7 +28,7 @@
 (defun simple-space-habit-restart ()
   (interactive)
   (org-set-property "SPACEDREP" "1")
-  (habit-checked))
+  (simple-space-habit-succeeded))
 
 (provide 'simple-space)
 ;;; simple-space.el ends here
